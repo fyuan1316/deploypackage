@@ -1,5 +1,5 @@
 kind: Deployment
-apiVersion: extensions/v1beta1 #指定api版本，此值必须在kubectl apiversion中
+apiVersion: extensions/v1beta1 
 metadata:   #资源的元数据/属性
   name: nginx #资源的名字，在同一个namespace中必须唯一
   namespace: nginx-test
