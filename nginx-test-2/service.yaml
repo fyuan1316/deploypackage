@@ -1,0 +1,13 @@
+apiVersion: v1 #指定api版本，此值必须在kubectl apiversion中
+kind: Service  #指定创建资源的角色/类型
+metadata:
+  namespace: nginx-test-2
+  name: nginx-pod
+  labels:
+    app: nginx
+spec:
+  selector:
+    app: nginx
+  ports:
+    port: 80
+    targetPort: 80
